@@ -1,0 +1,94 @@
+.productListContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07);
+}
+
+.input {
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  transition: border 0.2s;
+  padding: 8px;
+  width: 220px;
+}
+.input:focus {
+  border: 1.5px solid #6366f1;
+  outline: none;
+}
+
+.button {
+  background: linear-gradient(90deg, #6366f1 0%, #38bdf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-weight: 500;
+}
+.button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+.button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #38bdf8 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px 0 rgba(99,102,241,0.07);
+}
+.th, .td {
+  padding: 14px 10px;
+  text-align: left;
+}
+.th {
+  background: #6366f1;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.tr:nth-child(even) .td {
+  background: #f1f5f9;
+}
+.tr:hover .td {
+  background: #e0e7ff;
+  transition: background 0.2s;
+}
+.td {
+  color: #222;
+  font-size: 1rem;
+}
+
+.modalBg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(99,102,241,0.18);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+}
+.modalContent {
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 12px;
+  min-width: 320px;
+  box-shadow: 0 4px 24px 0 rgba(99,102,241,0.13);
+  text-align: center;
+}
+.error {
+  color: #ef4444;
+  margin-top: 10px;
+}
